@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ตารางเรียนนักศึกษา | ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้</title>
+  <meta name="description" content="ตารางเรียนนักศึกษา มหาวิทยาลัยแม่โจ้" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <span class="brand__logo">มจ</span>
+        <div class="brand__text">
+          <span class="brand__th">มหาวิทยาลัยแม่โจ้</span>
+          <span class="brand__en">MAEJO UNIVERSITY</span>
+        </div>
+      </div>
+      <div class="brand__right">
+        <span class="brand__system">ระบบบริการการศึกษา</span>
+        <span class="lang-select">🇹🇭 ภาษาไทย ▾</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ LAYOUT ============ -->
+  <div class="layout">
+
+    <!-- ----- Sidebar ----- -->
+    <nav class="sidebar" aria-label="เมนูหลัก">
+      <div class="sidebar__head">เมนูหลัก</div>
+      <ul class="sidebar__list">
+        <li><a class="sidebar__link" href="dashboard.html">หน้าแรก</a></li>
+        <li><a class="sidebar__link" href="#">เข้าสู่ระบบ (SSO)</a></li>        
+        <li><a class="sidebar__link active" href="schedule.html">ตารางเรียนนักศึกษา</a></li>
+        <li><a class="sidebar__link" href="register.html">แนะนำการลงทะเบียน</a></li>
+        <li><a class="sidebar__link" href="#">วิชาที่เปิดสอน</a></li>
+        <li><a class="sidebar__link" href="#">ตารางสอนอาจารย์</a></li>
+        <li><a class="sidebar__link" href="#">ตารางการใช้ห้อง</a></li>
+        <li><a class="sidebar__link" href="#">ปฏิทินการศึกษา</a></li>
+        <li><a class="sidebar__link" href="#">หลักสูตรที่เปิดสอน</a></li>
+        <li><a class="sidebar__link" href="#">วิธีการพิมพ์ใบเสร็จรับเงินค่าเทอม (กองคลัง)</a></li>
+        <li><a class="sidebar__link" href="#">เว็บไซต์สำนักบริหารฯ</a></li>
+      </ul>
+    </nav>
+
+    <!-- ----- Main ----- -->
+    <main class="content">
+      <h1 class="page-title">ตารางเรียนนักศึกษา</h1>
+
+      <!-- Student info -->
+      <section class="student-info">
+        <p class="student-info__id">6804101344 : นายธนากร บุญสูง</p>
+        <hr class="student-info__divider" />
+        <div class="student-info__grid">
+          <div><strong>ชื่อ:</strong> ธนากร บุญสูง</div>
+          <div><strong>สถานะ:</strong> กำลังศึกษา</div>
+          <div><strong>คณะ:</strong> วิทยาศาสตร์</div>
+          <div><strong>หลักสูตร:</strong> วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์</div>
+          <div><strong>อ. ....:</strong> อ. ....</div>
+        </div>
+      </section>
+
+      <!-- Term selector -->
+      <div class="term-bar">
+        <span><strong>ปีการศึกษา 2569</strong></span>
+        <span class="term-bar__nav">
+          <span>◀</span> <span>1 ระหว่าง</span> <span>10/8/2569 - 16/8/2569</span> <span>▶</span>
+        </span>
+      </div>
+
+      <!-- Schedule grid -->
+      <section aria-label="ตารางเรียน">
+        <div class="schedule-wrap">
+          <table class="schedule">
+            <thead>
+              <tr>
+                <th scope="col">วัน / เวลา</th>
+                <th scope="col">8:00-9:00</th>
+                <th scope="col">9:00-10:00</th>
+                <th scope="col">10:00-11:00</th>
+                <th scope="col">11:00-12:00</th>
+                <th scope="col">13:00-14:00</th>
+                <th scope="col">14:00-15:00</th>
+                <th scope="col">15:00-16:00</th>
+                <th scope="col">16:00-17:00</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="day-row">จันทร์</td>
+                <td class="slot"><strong>10301231</strong>(3) 1<br>Lab คอม3-4</td>
+                <td class="slot"><strong>10301231</strong>(3) 1<br>Lab คอม3-4</td>
+                <td></td><td></td>
+                <td class="slot"><strong>10700313</strong>(3) 1<br>105</td>
+                <td class="slot"><strong>10700313</strong>(3) 1<br>105</td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td class="day-row">อังคาร</td>
+                <td></td>
+                <td class="slot"><strong>10301222</strong>(3) 1<br>Lab คอม1-2</td>
+                <td class="slot"><strong>10301222</strong>(3) 1<br>Lab คอม1-2</td>
+                <td class="slot"><strong>10301222</strong>(3) 1<br>Lab คอม1-2</td>
+                <td></td><td></td><td></td><td></td>
+              </tr>
+              <tr>
+                <td class="day-row">พุธ</td>
+                <td class="slot"><strong>10301211</strong>(3) 1<br>201</td>
+                <td class="slot"><strong>10301211</strong>(3) 1<br>201</td>
+                <td></td><td></td>
+                <td class="slot"><strong>10301223</strong>(3) 1<br>Lab คอม3-4</td>
+                <td class="slot"><strong>10301223</strong>(3) 1<br>Lab คอม3-4</td>
+                <td></td><td></td>
+              </tr>
+              <tr>
+                <td class="day-row">พฤหัสบดี</td>
+                <td></td>
+                <td class="slot"><strong>10301225</strong>(3) 1<br>305</td>
+                <td class="slot"><strong>10301225</strong>(3) 1<br>305</td>
+                <td class="slot"><strong>10301225</strong>(3) 1<br>305</td>
+                <td></td><td></td>
+                <td class="slot"><strong>10700313</strong>(3) 1<br>Lab คอม1-2</td>
+                <td class="slot"><strong>10700313</strong>(3) 1<br>Lab คอม1-2</td>
+              </tr>
+              <tr>
+                <td class="day-row">ศุกร์</td>
+                <td class="slot"><strong>10301231</strong>(3) 1<br>105</td>
+                <td class="slot"><strong>10301231</strong>(3) 1<br>105</td>
+                <td></td><td></td>
+                <td class="slot"><strong>10301211</strong>(3) 1<br>Lab คอม2-3</td>
+                <td class="slot"><strong>10301211</strong>(3) 1<br>Lab คอม2-3</td>
+                <td></td><td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">* ข้อมูลที่ปรากฏอยู่ในตารางเรียนประกอบด้วย รหัสวิชา (จำนวนหน่วยกิต) กลุ่ม, ห้องเรียนและอาคาร ตามลำดับ</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      © 2569 มหาวิทยาลัยแม่โจ้ — สำนักบริหารและพัฒนาวิชาการ · ข้อมูลในระบบเป็นข้อมูลตัวอย่าง ปกปิดข้อมูลส่วนบุคคล
+    </div>
+  </footer>
+
+</body>
+</html>
